@@ -49,14 +49,14 @@ while status:
            'e-mail': userinfo[2], 
            'password': userinfo[3]}
     data = f"user{numberOfUser} Information: {user}"
-    print(data)
     container.append(data)
     
     new_user = input("Are you a new user(Enter Yes or No): ")
     if new_user == "No":
         status = False
+        print(container)
     else:
         status = True
         numberOfUser = numberOfUser + 1
-print(container)
+
         
